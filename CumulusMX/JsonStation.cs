@@ -793,6 +793,31 @@ namespace CumulusMX
 				}
 			}
 
+		    // === Lightning ===
+	        try
+		    {
+				if (data.lightning != null)
+				{
+					if (data.lightning.distance.HasValue)
+					{
+						 LightningDistance = data.lightning.distance.Value;
+					}
+					if (data.lightning.time.HasValue)
+					{
+						 LightningTime = data.lightning.time.Value;
+					}
+					if (data.lightning.strikes.HasValue)
+					{
+						 LightningStrikesToday = data.lightning.strikes.Value;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				cumulus.LogExceptionMessage(ex, "ApplyData: Error processing Lightning");
+				retStr.AppendLine("Error processing Lightning");
+			}
+			
 			// Do derived values after the primary values
 
 			if (mainStation)
@@ -856,7 +881,11 @@ namespace CumulusMX
 			public ExtraValue[] leafwetness { get; set; }
 			public PmData[] airquality { get; set; }
 			public Co2Data co2 { get; set; }
+<<<<<<< HEAD
 			public Lds[] laserdist { get; set; }
+=======
+   			public Lightning lightning { get; set; }
+>>>>>>> 0763f16 (Add Lightning)
 		}
 
 		private sealed class UnitsObject
@@ -934,6 +963,7 @@ namespace CumulusMX
 			public int? co2 { get; set; }
 			public int? co2_24h { get; set; }
 		}
+<<<<<<< HEAD
 		private sealed class Lds
 		{
 <<<<<<< HEAD
@@ -948,5 +978,13 @@ namespace CumulusMX
 			public int? strikes { get; set; }
    		}
 >>>>>>> 3cd32c0 (Added Lightning Support)
+=======
+  		private sealed class Lightning
+		{
+  			public float? distance { get; set; }
+	 		public int? time { get; set; }
+			public int? strikes { get; set; }
+   		}
+>>>>>>> 0763f16 (Add Lightning)
 	}
 }
