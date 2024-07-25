@@ -877,7 +877,7 @@ namespace CumulusMX
   		private sealed class Lightning
 		{
   			public float? distance { get; set; }
-	 		public int? time { get; set; }
+			public DateTime? time {  get; set; }
 			public int? strikes { get; set; }
    		}
 	}
