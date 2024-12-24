@@ -881,11 +881,8 @@ namespace CumulusMX
 			public ExtraValue[] leafwetness { get; set; }
 			public PmData[] airquality { get; set; }
 			public Co2Data co2 { get; set; }
-<<<<<<< HEAD
 			public Lds[] laserdist { get; set; }
-=======
    			public Lightning lightning { get; set; }
->>>>>>> 0763f16 (Add Lightning)
 		}
 
 		private sealed class UnitsObject
@@ -963,28 +960,21 @@ namespace CumulusMX
 			public int? co2 { get; set; }
 			public int? co2_24h { get; set; }
 		}
-<<<<<<< HEAD
 		private sealed class Lds
 		{
-<<<<<<< HEAD
 			public int index { get; set; }
 			public double? range { get; set; }
 			public double? depth { get; set; }
 		}
-
-=======
   			public float? distance { get; set; }
 			public DateTime? time {  get; set; }
 			public int? strikes { get; set; }
    		}
->>>>>>> 3cd32c0 (Added Lightning Support)
-=======
   		private sealed class Lightning
 		{
   			public float? distance { get; set; }
 	 		public int? time { get; set; }
 			public int? strikes { get; set; }
    		}
->>>>>>> 0763f16 (Add Lightning)
 	}
 }
