@@ -189,13 +189,6 @@ FakesAssemblies/
 ToDo.txt
 /CumulusMX/DataEditor-byDay.cs
 /CumulusMX/WeatherStation-byDay.cs
-<<<<<<< HEAD
-=======
-/Updates.md
 
 #Mycsproj
-*.cjproj
-<<<<<<< HEAD
->>>>>>> edff4a6 (Update .gitignore)
-=======
->>>>>>> edff4a6 (Update .gitignore)
+#*.cjproj

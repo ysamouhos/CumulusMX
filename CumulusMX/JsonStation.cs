@@ -966,10 +966,6 @@ namespace CumulusMX
 			public double? range { get; set; }
 			public double? depth { get; set; }
 		}
-  			public float? distance { get; set; }
-			public DateTime? time {  get; set; }
-			public int? strikes { get; set; }
-   		}
   		private sealed class Lightning
 		{
   			public float? distance { get; set; }
